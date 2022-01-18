@@ -1,0 +1,84 @@
+
+# The school district summary will be a high-level snapshot of the district's key metrics:
+
+## Total number of students
+## Total number of schools
+## Total budget
+## Average math score
+## Average reading score
+## Percentage of students who passed math
+## Percentage of students who passed reading
+## Overall passing percentage
+---
+# Oragnizing Data
+---
+## we have two data frames
+
+## school_data_df and it has five column headers
+### School ID
+### school_name
+### type (Charter or District) 
+### size (number of students)
+### budget (fiscal year budget)
+
+## student_data_df has seven columns
+### Student ID
+### student_name
+### gender
+### grade (grade level; freshman, junior, etc...)
+### school_name
+### reading_score
+### math_score
+---
+# Plan:
+## We'll be merging the the two dataframes using the merge() method.
+# Note: upon merging there are 39170 rows and 11 columns
+---
+# To get the percentage of students who passed math and reading, we will write code to:
+
+## Determine the passing grade.
+## Get the number of students who passed math and reading in separate DataFrames.
+## Calculate the number of students who passed math and reading.
+## Calculate the percentage of students who passed math and reading.
+---
+# To get the overall passing percentage, we will write code to:
+
+## Get the number of students who passed both math and reading in a DataFrame.
+## Calculate the number of students who passed both math and reading.
+## Calculate the percentage of students who passed both math and reading.
+---
+#Now that we have performed all the calculations needed for the district summary, 
+#let's add the following values and columns to a new DataFrame named "district_summary_df"
+
+## Total number of schools in the column "Total Schools"
+## Total number of students in the column "Total Students"
+## Total budget in the column "Total Budget"
+## Average reading score in the column "Average Reading Score"
+## Average math score in the column "Average Math Score"
+## Percentage of students passing reading in the column "% Passing Reading"
+## Percentage of students passing math in the column "% Passing Math"
+## Overall passing percentage in the column "% Overall Passing"
+
+# Challenge Code
+Deliverable 3: A Written Report for the School District Analysis (25 points)
+Deliverable 3 Instructions
+For this part of the Challenge, write a report that summarizes your updated analysis and compares it with the results 
+from the module.
+
+The analysis should contain the following:
+
+Overview of the school district analysis: Explain the purpose of this analysis.
+
+Results: Using bulleted lists and images of DataFrames as support, address the following questions.
+
+How is the district summary affected?
+How is the school summary affected?
+How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to 
+the other schools?
+How does replacing the ninth-grade scores affect the following:
+Math and reading scores by grade
+Scores by school spending
+Scores by school size
+Scores by school type
+Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth 
+grade at Thomas High School have been replaced with NaNs.
